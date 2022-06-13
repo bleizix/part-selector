@@ -6,14 +6,9 @@
 
 /// <reference path="../../spicetify-cli/globals.d.ts" />
 
-//   1. shortcut/button in context menu
-//   2. popup menu and manually set a time/set a time using bar
-//   3. play this part(easy)
-//   4. play again and again(cuz i do extension only for self using)
-
-
 let start_position = 0
 let end_position = 0
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -23,11 +18,6 @@ const msToMinutesSeconds = (ms) => {
     return `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`
 };
 
-function goto_start_time() {
-    Spicetify.Player.seek(start_position)
-    
-}
-// нотифы 
 async function shownotif_START_POSITION() {
     
     start_position = Spicetify.Player.getProgress()
@@ -60,12 +50,8 @@ Spicetify.Player.addEventListener("songchange", () => {
     end_position = 0
 });
 //some shit-code
-Spicetify.Mousetrap.bind('s', goto_start_time)
+Spicetify.Mousetrap.bind('r', reset)
 
 Spicetify.Mousetrap.bind('d', shownotif_START_POSITION)
 Spicetify.Mousetrap.bind('f', shownotif_END_POSITION)
 
-
-
-
-// хуйня:::::      Set a two time: when song starts and when ends
