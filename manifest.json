@@ -1,0 +1,9 @@
+[
+    {
+        "name": "PartSelector",
+        "description": "Set a range that will be played.",
+        "preview": "part_selector_preview.png",
+        "main": "part_selector.js",
+        "readme": "README.md"
+    }
+]
