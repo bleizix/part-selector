@@ -49,7 +49,7 @@ Spicetify.Player.addEventListener("songchange", () => {
     start_position = 0
     end_position = 0
 });
-//some shit-code
+
 Spicetify.Mousetrap.bind('r', reset)
 
 Spicetify.Mousetrap.bind('d', shownotif_START_POSITION)
