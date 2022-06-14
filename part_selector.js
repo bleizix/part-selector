@@ -2,7 +2,7 @@
 
 // NAME: time_setter
 // AUTHOR: Bleizix
-// DESCRIPTION: Set a диапазон that will be played.
+// DESCRIPTION: Set a range that will be played.
 
 /// <reference path="../../spicetify-cli/globals.d.ts" />
 
