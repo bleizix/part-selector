@@ -4,6 +4,7 @@
 This extension play selected part.
 Usage: 'd' - start position, 'f' - end position, 'r' - reset.
 
+For first set end position(f), then start position(d). 
 ## Installation
 Install from the [marketplace](https://github.com/spicetify/spicetify-marketplace).
 
