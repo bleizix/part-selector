@@ -1,6 +1,6 @@
 //@ts-check
 
-// NAME: time_setter
+// NAME: time_selector
 // AUTHOR: Bleizix
 // DESCRIPTION: Set a range that will be played.
 
