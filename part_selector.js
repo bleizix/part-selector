@@ -43,11 +43,11 @@ async function shownotif_END_POSITION(){
 }
 function reset(){
     start_position = 0
-    end_position = 0
+    end_position = 99999999999
 }
 Spicetify.Player.addEventListener("songchange", () => {
     start_position = 0
-    end_position = 0
+    end_position = 99999999999
 });
 
 Spicetify.Mousetrap.bind('r', reset)
