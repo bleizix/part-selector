@@ -44,6 +44,8 @@ async function shownotif_END_POSITION(){
 function reset(){
     start_position = 0
     end_position = 99999999999
+    
+    Spicetify.showNotification(`Resetted!`)
 }
 Spicetify.Player.addEventListener("songchange", () => {
     start_position = 0
